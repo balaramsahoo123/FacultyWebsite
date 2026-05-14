@@ -2432,9 +2432,11 @@ footer{
                 View Profile
             </button>
 
-            <button class="btn btn-outline">
-                Download CV
-            </button>
+            <-- download cv updated code -->
+
+           <button class="btn btn-outline" onclick="downloadCV()">
+                   Download CV
+           </button>
 
         </div>
 
@@ -3600,7 +3602,12 @@ window.addEventListener("scroll", revealGallery);
 
 revealGallery();
 
-
+function downloadCV() {
+    const link = document.createElement('a');
+    link.href = 'cv.pdf';
+    link.download = 'My_CV.pdf';
+    link.click();
+}
 
 
 
