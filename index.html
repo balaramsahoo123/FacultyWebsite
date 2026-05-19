@@ -2405,9 +2405,9 @@ footer{
 
 <div id="particles-js"></div>
 
-    <div class="hero-content reveal">
+    <div class="hero-content reveal"> <br>
 
-        <h3>Hello, I'm</h3> <br>
+        <h3>Hello, I'm</h3>
 
         <h1>Mr. Balaram Sahoo</h1>
 
@@ -2432,11 +2432,9 @@ footer{
                 View Profile
             </button>
 
-            <-- download cv updated code -->
-
-           <button class="btn btn-outline" onclick="downloadCV()">
-                   Download CV
-           </button>
+            <button class="btn btn-outline">
+                Download CV
+            </button>
 
         </div>
 
@@ -3602,12 +3600,7 @@ window.addEventListener("scroll", revealGallery);
 
 revealGallery();
 
-function downloadCV() {
-    const link = document.createElement('a');
-    link.href = 'https://raw.githubusercontent.com/balaramsahoo123/FacultyWebsite/main/balaram_official_new_resume_for_job.pdf';
-    link.download = 'My_CV.pdf';
-    link.click();
-}
+
 
 
 
